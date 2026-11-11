@@ -824,12 +824,16 @@ a.card.demo-open::after{background:rgba(177,68,47,.88);box-shadow:inset 0 1px 0 
 #sds-lock small{display:block;margin-top:6px;padding-top:12px;border-top:1px solid rgba(60,70,58,.15);font-size:11.5px}
 @media (max-width:480px){#sds-lock .panel{padding:32px 22px 22px}#sds-lock h1{font-size:26px}}
 /* ---------- Student Teacher Edition: Coach panel ---------- */
-.mentor-bar{background:#1F3A4A;color:#EEF4F7;font:600 13px/1.4 'Source Sans 3',system-ui,sans-serif}
-.mentor-bar .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;justify-content:space-between;padding-top:7px;padding-bottom:7px}
-.mentor-bar b{letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:#9FD3EA}
-.mentor-bar nav{display:flex;flex-wrap:wrap;gap:4px 14px}
-.mentor-bar a{color:#EEF4F7;text-decoration:none;border-bottom:1px solid rgba(238,244,247,.35)}
-.mentor-bar a:hover{border-bottom-color:#9FD3EA}
+.mentor-bar{background:linear-gradient(180deg,#24485C,#1A3442);color:#EEF4F7;font:600 15px/1.4 'Source Sans 3',system-ui,sans-serif;border-bottom:3px solid #b1442f;box-shadow:0 4px 12px -6px rgba(0,0,0,.45);position:relative;z-index:5}
+.mentor-bar .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+.mentor-bar .mb-id{display:flex;align-items:center;gap:12px}
+.mentor-bar .mb-id svg{width:30px;height:30px;flex:none;fill:none;stroke:#9FD3EA;stroke-width:1.7;stroke-linejoin:round}
+.mentor-bar .mb-id b{display:block;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:#9FD3EA}
+.mentor-bar .mb-id span{display:block;font:400 18px/1.2 Georgia,serif;color:#fff}
+.mentor-bar nav{display:flex;flex-wrap:wrap;gap:6px}
+.mentor-bar nav a{color:#fff;text-decoration:none;border:1px solid rgba(159,211,234,.45);background:rgba(255,255,255,.06);padding:6px 11px;border-radius:4px;font-size:14.5px;transition:background .12s,border-color .12s}
+.mentor-bar nav a:hover,.mentor-bar nav a:focus-visible{background:rgba(159,211,234,.18);border-color:#9FD3EA}
+.mentor-bar nav a[aria-current="page"]{background:#b1442f;border-color:#b1442f}
 .coach-tab{position:fixed;left:14px;bottom:14px;z-index:60;display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border:1px solid rgba(255,255,255,.18);border-radius:17px;cursor:pointer;
  background:rgba(31,58,74,.9);color:#fff;font:700 12px/1 'Source Sans 3',sans-serif;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 6px 14px -6px rgba(0,0,0,.5);opacity:.85;transition:opacity .15s}
 .coach-tab:hover,.coach-tab:focus-visible,.coach-tab[aria-expanded="true"]{opacity:1}
@@ -860,7 +864,7 @@ a.card.demo-open::after{background:rgba(177,68,47,.88);box-shadow:inset 0 1px 0 
 </style>
 </head>
 <body data-page="mentor-index" data-root="../">
-<div class="mentor-bar no-print" role="navigation" aria-label="Mentor menu"><div class="wrap"><span><b>Student Teacher Edition</b> &nbsp;·&nbsp; Prepared for Gavin Miller</span><nav><a href="../mentor/index.html">Start here</a><a href="../mentor/run-of-show.html">Run of show</a><a href="../mentor/primers.html">Primers</a><a href="../mentor/classroom.html">Running the room</a><a href="../mentor/observation.html">Observation &amp; reflection</a><a href="../mentor/notebook.html">Mentor notebook</a><a href="../teacher/lesson-plans.html">Lesson plans</a><a href="../teacher/index.html">Answer keys</a></nav></div></div>
+<div class="mentor-bar no-print" role="navigation" aria-label="Student Teacher menu"><div class="wrap"><div class="mb-id"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/><path d="M22 9v6"/></svg><div><b>Student Teacher Edition</b><span>Prepared for Gavin Miller</span></div></div><nav><a href="../mentor/index.html" aria-current="page">Start here</a><a href="../mentor/run-of-show.html">Run of show</a><a href="../mentor/primers.html">Primers</a><a href="../mentor/classroom.html">Running the room</a><a href="../mentor/observation.html">Observation &amp; reflection</a><a href="../mentor/notebook.html">Mentor notebook</a><a href="../teacher/lesson-plans.html">Lesson plans</a><a href="../teacher/index.html">Answer keys</a></nav></div></div>
 <a class="sr" href="#main">Skip to content</a>
 <div class="util"><div class="wrap"><span class="brand">Promise &amp; Practice · ShadowDog Digital Studios</span><span>Unit 3 · Industry, Immigration &amp; Reform · 1877–1919</span></div></div>
 <header class="mast"><div class="wrap">
